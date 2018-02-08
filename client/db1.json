@@ -1,0 +1,86 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "personalNumber": 123456,
+      "location": 1,
+      "email": "martin@seznam.cz",
+      "note": "Je to dobry pracovnik",
+      "function": 2,
+      "validityFrom": "20.09.1991",
+      "validityTo": "11.11.1991",
+      "application_id": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "personalNumber": 123456,
+      "location": 1,
+      "email": "martin@seznam.cz",
+      "note": "Je to dobry pracovnik",
+      "function": 2,
+      "validityFrom": "20.09.1991",
+      "validityTo": "11.11.1991",
+      "application_id": [
+        1,
+        2
+      ]
+    }
+  ],
+  "application": [
+    {
+      "id": 1,
+      "environment": "Test",
+      "name": "Dochazka",
+      "version": "1.1",
+      "description": "Tato aplikace slouzi pro zaznam dochazky",
+      "validityFrom": "20.09.1991",
+      "validityTo": "11.11.1991",
+      "pathToSource": "http://localhost/dochazka",
+      "sourceCode": 0,
+      "typeOfApplication_id": 1,
+      "author_id": 2
+
+    },
+    {
+      "id": 2,
+      "environment": "Produkce",
+      "name": "Dochazka",
+      "version": "1.1",
+      "description": "Tato aplikace slouzi pro zaznam dochazky",
+      "validityFrom": "20.09.1991",
+      "validityTo": "11.11.1991",
+      "pathToSource": "http://localhost/dochazka",
+      "sourceCode": 0,
+      "typeOfApplication_id": 2,
+      "author_id": 1
+    }
+  ],
+  "typeOfApplication": [
+    {
+      "id": 1,
+      "category": "Interni",
+      "os": "Windows",
+      "versionOs": 7
+    },
+    {
+      "id": 2,
+      "category": "Interni",
+      "os": "Windows",
+      "versionOs": 10
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "name": "Firma",
+      "contact": "724888999"
+    },
+    {
+      "id": 2,
+      "name": "Firma2",
+      "contact": "724888999"
+    }
+  ]
+}

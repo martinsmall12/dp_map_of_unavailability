@@ -1,0 +1,152 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "personalNumber": 123456,
+      "location": 1,
+      "email": "martin@seznam.cz",
+      "note": "Je to dobry pracovnik",
+      "function": 2,
+      "validityFrom": "11.11.1991",
+      "validityTo": "11.11.1991",
+      "application_id": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "personalNumber": 123457,
+      "location": 1,
+      "email": "martin@seznam.cz",
+      "note": "Je to dobry pracovnik",
+      "function": 2,
+      "validityFrom": "11.11.1991",
+      "validityTo": "11.11.1991",
+      "application_id": [
+        1,
+        2
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "environment": "Test",
+      "name": "Dochazka",
+      "version": "1.1",
+      "description": "Tato aplikace slouzi pro zaznam dochazky",
+      "validityFrom": "11.11.1991",
+      "validityTo": "11.11.1991",
+      "pathToSource": "http://localhost/dochazka",
+      "sourceCode": 0,
+      "typeOfApplication_id": 1,
+      "author_id": 2,
+      "database_id": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "environment": "Produkce",
+      "name": "Statistika",
+      "version": "1.1",
+      "description": "Tato aplikace slouzi pro zaznam dochazky",
+      "validityFrom": "1991-11-28T23:00:00.000Z",
+      "validityTo": "1991-11-15T23:00:00.000Z",
+      "pathToSource": "http://localhost/dochazka",
+      "sourceCode": 0,
+      "typeOfApplication_id": 2,
+      "author_id": 2,
+      "database_id": [
+        1,
+        2
+      ]
+    },
+    {
+      "typeOfApplication_id": 2,
+      "database_id": [
+        2,
+        1
+      ],
+      "author_id": 1,
+      "validityFrom": "2018-02-21T23:00:00.000Z",
+      "validityTo": "2018-02-15T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "author_id": 2,
+      "typeOfApplication_id": 1,
+      "database_id": [
+        2,
+        1
+      ],
+      "validityFrom": "2018-02-09T23:00:00.000Z",
+      "validityTo": "2018-03-23T23:00:00.000Z",
+      "id": 5
+    },
+    {
+      "database_id": [
+        2,
+        1
+      ],
+      "validityFrom": "2018-02-14T23:00:00.000Z",
+      "validityTo": "2018-02-15T23:00:00.000Z",
+      "name": "Moje aplikace",
+      "environment": "Test",
+      "version": "1.0",
+      "description": "Zajímavá aplikace",
+      "pathToSource": "c:/aplikace",
+      "author_id": 2,
+      "typeOfApplication_id": 2,
+      "id": 6
+    }
+  ],
+  "typeOfApplication": [
+    {
+      "id": 1,
+      "category": "Interni",
+      "os": "Windows",
+      "versionOs": 7
+    },
+    {
+      "id": 2,
+      "category": "externi",
+      "os": "Windows",
+      "versionOs": 10
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Firma",
+      "contact": "724888999"
+    },
+    {
+      "id": 2,
+      "name": "Firma2",
+      "contact": "724888999"
+    }
+  ],
+  "database": [
+    {
+      "id": 1,
+      "name": "database1",
+      "port": "8080",
+      "host": "localhost",
+      "sid": "123466",
+      "serviceName": "db1",
+      "memoryPGA": 20,
+      "memorySGA": 30
+    },
+    {
+      "id": 2,
+      "name": "database2",
+      "port": "8080",
+      "host": "localhost",
+      "sid": "123456",
+      "serviceName": "db2",
+      "memoryPGA": 10,
+      "memorySGA": 15
+    }
+  ]
+}
